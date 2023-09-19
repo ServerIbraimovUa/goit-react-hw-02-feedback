@@ -26,7 +26,7 @@ export default class Feedback extends Component {
 
   // формула позитивного відсотку
   countPositiveFeedbackPercentage = () =>
-    (this.state.good / this.countTotalFeedback()) * 100;
+    Math.round((this.state.good / this.countTotalFeedback()) * 100);
 
   //основний рендер
   render() {
